@@ -18,10 +18,8 @@ def toggle_vpn(turn_on):
 
 # Main logic
 current_coords = get_current_location()
-
-if near_school(current_coords, school_coords):
-    print("You are near school. VPN is disabled.")
-    toggle_vpn(False)
+    
+    
 else:
     print("You are away from school. VPN is enabled.")
     toggle_vpn(True)
